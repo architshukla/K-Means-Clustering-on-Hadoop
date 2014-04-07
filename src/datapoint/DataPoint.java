@@ -2,7 +2,7 @@
   * @author Archit Shukla
   * @version 1.0
   */
-package DataPoint;
+package datapoint;
 
 import java.io.IOException;
 import java.io.DataInput;

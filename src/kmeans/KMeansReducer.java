@@ -1,11 +1,11 @@
-package KMeans;
+package kmeans;
 
 import java.io.IOException;
 
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.mapreduce.Reducer;
 
-import DataPoint.DataPoint;
+import datapoint.DataPoint;
 
 /**
   * Reducer class for the k-Means Clustering.

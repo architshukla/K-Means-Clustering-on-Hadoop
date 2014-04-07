@@ -3,7 +3,7 @@
   * @version 1.0
   * Package to implement k-Means Clustering on Hadoop MapReduce.
   */
-package KMeans;
+package kmeans;
 
 import java.io.IOException;
 import java.io.BufferedReader;
@@ -19,10 +19,10 @@ import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.conf.Configuration;
 
-import DataPoint.DataPoint;
+import datapoint.DataPoint;
 
 /**
-  * Driver class for the package. Initializes the MapReduce job to find Cluster Centers.
+  * Driver class for the package. Initializes the MapReduce job to find stable K-Means Centroids.
   */
 public class KMeansDriver
 {
@@ -149,7 +149,7 @@ public class KMeansDriver
 		// args[2] = Path to output file
 		if(args.length != 3)
 		{
-			System.out.println("Usage: kMeansDriver <input path> <k centroids file> <output path>");
+			System.out.println("Usage: kMeansDriver <Input Path> <K-Centroids File> <Output Path>");
 			System.exit(-1);
 		}
 

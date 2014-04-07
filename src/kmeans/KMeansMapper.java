@@ -1,4 +1,4 @@
-package KMeans;
+package kmeans;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -13,7 +13,7 @@ import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
 
-import DataPoint.DataPoint;
+import datapoint.DataPoint;
 
 /**
   * Mapper class for the k-Means Clustering.

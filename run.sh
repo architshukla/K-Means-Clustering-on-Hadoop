@@ -8,4 +8,8 @@ JARFILENAME=kMeans.jar
 # Delete previous outputs
 hadoop dfs -rmr $BASEFOLDER/output*
 
-hadoop jar dist/$JARFILENAME KMeans.KMeansDriver $DATASET $KCENTROIDSFILE $BASEFOLDER/output_1
+# Iterative K-Means Cluster Centroid calculation
+time hadoop jar dist/$JARFILENAME kmeans.KMeansDriver $DATASET $KCENTROIDSFILE $BASEFOLDER/output_1
+
+# Cluster Assignment
+hadoop jar dist/$JARFILENAME clusterassign.ClusterAssignDriver $DATASET $KCENTROIDSFILE $BASEFOLDER/output_2
